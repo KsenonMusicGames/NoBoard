@@ -1,0 +1,14 @@
+{
+  "name": "_1053_1077_32_1080_1076_1080_32_1082_32_1076_1086_1089_1082_1077",
+  "displayName": "Не иди к доске",
+  "version": "1.0.0",
+  "description": "Не иди к доске",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "ecosystem:cordova"
+  ],
+  "author": ""
+}

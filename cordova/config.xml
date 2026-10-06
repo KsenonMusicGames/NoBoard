@@ -1,0 +1,97 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget id="com.wNeidikdoske_19016892" version="1.0.0" xmlns="http://www.w3.org/ns/widgets"
+    xmlns:cdv="http://cordova.apache.org/ns/1.0"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <name>Не иди к доске</name>
+    <content src="index.html" />
+    <plugin name="cordova-plugin-whitelist" version="1" />
+    <plugin name="gdevelop-cordova-plugin-screen-orientation" version="3.0.4-patch.2" />
+    <access origin="*" />
+    <allow-intent href="http://*/*" />
+    <allow-intent href="https://*/*" />
+    <allow-intent href="tel:*" />
+    <allow-intent href="sms:*" />
+    <allow-intent href="mailto:*" />
+    <allow-intent href="geo:*" />
+
+    <!-- Allow iframes on iOS like leaderboards, including those in development that are not served
+    via https. -->
+    <allow-navigation href="*" />
+
+    <platform name="android">
+        <allow-intent href="market:*" />
+
+        <!-- Required by admob-plus plugin > version 2 -->
+        <preference name="GradlePluginKotlinEnabled" value="true" />
+
+        <!-- Increase timeout value for low-end android devices -->
+        <preference name="loadUrlTimeoutValue" value="60000" />
+
+        <icon src="www/e3761b124f6d1dfbe620bbf30d030c9ac07c307674595e5d9a09bc87fd743ead-android-icon-36.png.png" density="ldpi" />
+<icon src="www/39bcf4b61d5bfbca397f1238c4e36144931a3a5b22f597d62ef7df46c3a473fe-android-icon-48.png.png" density="mdpi" />
+<icon src="www/41d321427f0f0f11cb56e9da60d3f524a260edaf8f7aa33948da7b88a4c7b1d0-android-icon-72.png.png" density="hdpi" />
+<icon src="www/b1efc447e2d30d15cf6ab85bbaa0a867fc43aadc393c37f8484ac7e5326315c4-android-icon-96.png.png" density="xhdpi" />
+<icon src="www/e4db2da74d9890311233640d9f79e3c8aa04fd40c62464e7e6e3c594109a468c-android-icon-144.png.png" density="xxhdpi" />
+<icon src="www/d99bc6c65e6f3022c02a087cfee6682dc647dcf8720df39be27714f866ddaf76-android-icon-192.png.png" density="xxxhdpi" />
+<preference name="AndroidWindowSplashScreenAnimatedIcon" value="www/590c9ec98a777bf16a10717fb122680d4fcc478880bc5f833c8121f63f40224d-android-windowSplashScreenAnimatedIcon.png.png" />
+
+        <preference name="AndroidWindowSplashScreenBackground" value="#000000" />
+
+        <!-- Required to get cordova-plugin-safariviewcontroller to call Chrome CustomTabs on
+        Android. -->
+        <config-file target="AndroidManifest.xml" parent="/manifest">
+            <queries>
+                <intent>
+                    <action android:name="android.support.customtabs.action.CustomTabsService" />
+                </intent>
+            </queries>
+        </config-file>
+    </platform>
+    <platform name="ios">
+        <allow-intent href="itms:*" />
+        <allow-intent href="itms-apps:*" />
+
+        <preference name="SwiftVersion" value="5.3" />
+
+        <!-- Apple requires a minimum OS version of 15.0 for App Store uploads
+        (ITMS-90068, enforced from Spring 2027) and Xcode 27 refuses to build
+        anything lower. -->
+        <preference name="deployment-target" value="15.0" />
+
+        <icon src="www/1954ae9c2d2f66d21a97f89afbdba512fa64cacf2f1da879267819ce381598c6-ios-icon-180.png.png" width="180" height="180" />
+<icon src="www/ea6ef1d8ac98a12b6f72fc1a0a80b5e579bbc4cb078e364d35ba4cf02a1a465e-ios-icon-60.png.png" width="60" height="60" />
+<icon src="www/d9e7cb95ab3f53cd14f92a731047d99ae8ed01a674539b1ac662b8ab8c3cf7b0-ios-icon-120.png.png" width="120" height="120" />
+<icon src="www/58dfa1156b37f86c9cc9fe885736075249f695e5b0ae1f7fb944182072a978ed-ios-icon-76.png.png" width="76" height="76" />
+<icon src="www/2fd8592dcd1be872545fd77fa9f04f9097f797fc0d19b58c93a26a97baed3ed2-ios-icon-152.png.png" width="152" height="152" />
+<icon src="www/760372499c268af578666dd7b966ae37aa1200e3222b7a4133cd611e302bf327-ios-icon-40.png.png" width="40" height="40" />
+<icon src="www/cbff066f5337984868921ebda87d1ea169af30f6d5770a1759a61dc131f4c2fc-ios-icon-80.png.png" width="80" height="80" />
+<icon src="www/3562908eb1457cf85ee5436f7edd34fee82a77a9dcdf863cbdcf2e69af751a74-ios-icon-57.png.png" width="57" height="57" />
+<icon src="www/8d51f90f67ee06c1fcb3b6c7bf375c2cb1b34d0caadc70504ef476bd8dd8ce17-ios-icon-114.png.png" width="114" height="114" />
+<icon src="www/41d321427f0f0f11cb56e9da60d3f524a260edaf8f7aa33948da7b88a4c7b1d0-ios-icon-72.png.png" width="72" height="72" />
+<icon src="www/e4db2da74d9890311233640d9f79e3c8aa04fd40c62464e7e6e3c594109a468c-ios-icon-144.png.png" width="144" height="144" />
+<icon src="www/b0a9378403ab5465e996810a14b7fc004ec32bc3a27f48cb76c288a32af6bea1-ios-icon-167.png.png" width="167" height="167" />
+<icon src="www/93ed845c4cb17d446348b3ac056d4d97fc4bdec0259a43f07c3770f127615499-ios-icon-29.png.png" width="29" height="29" />
+<icon src="www/b5f1b9764f135d9ecccc9564305b1eb990fc24622316f1a993811d3b60494957-ios-icon-58.png.png" width="58" height="58" />
+<icon src="www/15d68e59d59910f1dbebd2d09594c1443cd5b67d668582e08d6527576f8769b1-ios-icon-87.png.png" width="87" height="87" />
+<icon src="www/922c7f29d52a2a885385c2d3e04bbe23b5a5c5fef3e56e73975fa098abb79198-ios-icon-50.png.png" width="50" height="50" />
+<icon src="www/f9af305188bbb4b79850efaf97a2a43b4c02814e8e0bd909ab15bbaa2d5fc7ce-ios-icon-20.png.png" width="20" height="20" />
+<icon src="www/b618f2a1f100b8a3062bc2c89d017c3d6031008d35d72d10d6f46371e8a56bb6-ios-icon-100.png.png" width="100" height="100" />
+<icon src="www/b0a9378403ab5465e996810a14b7fc004ec32bc3a27f48cb76c288a32af6bea1-ios-icon-167.png.png" width="167" height="167" />
+<icon src="www/f69b21e6696810bedc41e75248bb319d9cbfd2c4e980c8bc4118c9cd249da250-ios-icon-1024.png.png" width="1024" height="1024" />
+
+    </platform>
+
+    <preference name="AndroidXEnabled" value="true" />
+
+    <preference name="BackgroundColor" value="0xff000000" />
+
+    <preference name="Orientation" value="landscape" />
+
+    <!-- Android Fullscreen -->
+    <preference name="Fullscreen" value="true" />
+
+    <!-- Cordova/Phonegap version -->
+    <preference name="phonegap-version" value="cli-9.0.0" />
+
+    
+</widget>
